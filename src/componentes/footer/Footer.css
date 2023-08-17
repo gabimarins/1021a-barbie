@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.rodape{
+ 
+    background-color: lightpink;
+    margin-top: 100px;
+    color: rgb(255, 60, 158);
+    padding-top: 50px;
+    padding-bottom: 2.5rem;
+    
+}
+
+
+.sessao1{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.bloco{
+    color: rgb(255, 60, 158);
+    display: flex;
+    flex-direction: column;
+}
+.bloco a:hover, .blocofinal a:hover{
+    color:  rgb(255, 122, 189);
+}
+
+.bloco:not(:last-child){
+    
+    margin-right: 70px;
+}
+
+.blocoinicial{
+    margin-right: 100px;
+}
+a{
+    color: rgb(255, 60, 158);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 10px;
+}
+img{
+    width: 32px;
+    height: 30px;
+}
+
+img:not(:last-child){
+    margin-right: 20px;
+}
+
+.blocoinicial p{
+    font-weight: bold;
+    line-height: 25px;
+}
+.divtexto{
+    width: 300px;
+}
+
+h1{
+    font-size: 18px;
+}
+
+
+.logo{
+    width: 150px;
+    height: 70px;
+}
+
+.propriedadesfinais{
+    display: flex;
+    flex-direction: row;
+
+}
+.propriedadesfinais a{
+    padding: 15px;
+}
+
+.propriedadesfinais:not(:last-child){
+    padding-right: 30px;
+}
+
+.bloco6{
+    display: flex;
+    justify-content: center;
+}
+
+.blocofinal{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    width: 2100px;
+    justify-content: space-around;
+    
+    text-align: center;
+    align-items: center;
+  
+}
+
+.blocofinal a{
+    font-size: 16px;
+    cursor: pointer;
+}
