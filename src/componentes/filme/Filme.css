@@ -1,0 +1,14 @@
+.filme-content{
+    background-color: lightpink;
+    width: fit-content;
+}
+
+
+.filme-content>img{
+    width: 300px;
+    height: auto;
+}
+
+.text-barbie{
+color: rgb(255, 60, 158);
+}
