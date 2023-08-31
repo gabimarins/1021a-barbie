@@ -1,18 +1,24 @@
-import './Filme.css'
+
 import Imagem from "..//img/barbie.png"
+import './Filme.css'
+type FilmeProps = {
+    titulo: string,
+    sinopse:string,
+    imagem:string
 
+}
 
-function Filme(){
+function Filme(props:FilmeProps){
     return(
         <div className="filme-content">
             {/* o comentario aqui é desse jeito, dentro das
             chaves vc pode usar js, por isso da pra importar
             o "imagem" dentro do componente IMG */}
-            <img src={Imagem} alt=""></img>
+            <img className="img-filme" src={Imagem} alt=""></img>
 
             <div className="text-barbie">
-                <h1>Barbie</h1>
-                <p className="sinopse">Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.</p>
+                <h1>{props.titulo}</h1>
+                <p className="sinopse">{props.sinopse}</p>
             </div>
 
         </div>
