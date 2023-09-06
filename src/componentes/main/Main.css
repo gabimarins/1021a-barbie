@@ -1,5 +1,17 @@
 .content-main{
     display: flex;
-    padding: 0px 100px;
+    padding: 0px 200px;
     gap: 15px;
+    flex-wrap: wrap;
+}
+
+.campo_pesquisa{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.botao_pesquisa{
+    width: 300px;
+    border: 0.5px gray solid;
 }

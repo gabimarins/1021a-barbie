@@ -14,7 +14,9 @@ function Filme(props:FilmeProps){
             {/* o comentario aqui é desse jeito, dentro das
             chaves vc pode usar js, por isso da pra importar
             o "imagem" dentro do componente IMG */}
-            <img className="img-filme" src={Imagem} alt=""></img>
+           <div className="foto_filme">
+                <img className="img-filme" src={props.imagem} alt=""></img>
+           </div> 
 
             <div className="text-barbie">
                 <h1>{props.titulo}</h1>
