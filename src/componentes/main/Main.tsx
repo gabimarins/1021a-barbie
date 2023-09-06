@@ -5,11 +5,14 @@ import lupa from '..//img/lupa.png';
 export default function Main(){
     return(
 <>
-        {<div id="divBusca">
-
-              <input type="text" id="txtBusca" placeholder="Encontre o filme desejado..."/>
-              <img src={lupa} alt="Buscar..." id="btnBusca"/>
-</div>}
+        {
+       <div className="campopesquisa"> 
+              <div id="divBusca">
+                     <input type="text" id="txtBusca" placeholder="Encontre o filme desejado..."/>
+                     <button className="divBusca"><img src={lupa}></img></button>
+              </div>
+      </div>
+       }
        
 
         <main className="content-main">

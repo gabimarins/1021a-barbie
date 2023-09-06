@@ -53,9 +53,15 @@
     font-size:18px;
     border:none;
     height:32px;
-    width:226px;
+    width:450px;
     border-radius: 5px 0px 0px 5px;
-    border: solid 0.5px rgb(184, 184, 184);
+    border: none;
+  }
+  
+  button{
+    border: none;
+    background-color: #e0218a;
+    height:33.5px;
   }
   
   #btnBusca{
@@ -64,16 +70,35 @@
     background-color: #e0218a ;
     cursor:pointer;
     
-    height:32px;
+    border-radius: 0px 5px 5px 0px;
+    
   }
+
+  #btnBusca:focus, input:focus {
+    box-shadow: 0 0 0 0;
+   
+    outline: 0.5px solid #e0218a;
+}
   
   #divBusca img{
+    width: 200px;
+    
     float:left;
+    width: 20px;
+    height: 20px;
+    
   }
   
+  .campopesquisa{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px 30px 0px;
+  }
+
   #divBusca{
-    border: solid 1px #e0218a;
-    border-radius:10px;
-    height:37px;
-    width:400px;
+    width:00px;
+    border-radius: 5px;
+    border: solid 1px blue;
   }

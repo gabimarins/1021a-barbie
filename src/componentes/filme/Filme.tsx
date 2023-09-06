@@ -1,4 +1,3 @@
-
 //import imagem from "..//img/barbie.png"
 import './Filme.css'
 type FilmeProps = {
