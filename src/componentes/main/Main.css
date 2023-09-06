@@ -5,13 +5,75 @@
     flex-wrap: wrap;
 }
 
-.campo_pesquisa{
+/*
+.areapesquisa{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    flex-direction: column;
+}
+.campo_pesquisa{
+    margin-top: 30px;
+    display: flex;
 }
 
 .botao_pesquisa{
     width: 300px;
     border: 0.5px gray solid;
 }
+
+.campo_pesquisa input .botao_pesquisa{
+    box-shadow: 0 0 0 0;
+    border: 0.5px rgb(177, 177, 177) solid;
+    border-radius: 5px 0px 0px 5px;
+    width: 500px;
+   height: 30px;
+    outline: 0;
+    font-size: 14px;
+    text-indent: 8px;
+}
+
+.campo_pesquisa input .arealupa{
+    display: flex;
+    background-color: #e0218a;
+    height: 33px;
+    width: 36px;
+    border-radius: 5px 5px 5px 0px;
+    border: 0;
+    background-image: url(https://m.media-amazon.com/images/G/32/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405936659_.png);
+}
+.lupa{
+    width: 28px;
+    height: 25px;
+    background-position: 2px -280px;
+}*/
+#txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:226px;
+    border-radius: 5px 0px 0px 5px;
+    border: solid 0.5px rgb(184, 184, 184);
+  }
+  
+  #btnBusca{
+    float:left;
+    
+    background-color: #e0218a ;
+    cursor:pointer;
+    
+    height:32px;
+  }
+  
+  #divBusca img{
+    float:left;
+  }
+  
+  #divBusca{
+    border: solid 1px #e0218a;
+    border-radius:10px;
+    height:37px;
+    width:400px;
+  }

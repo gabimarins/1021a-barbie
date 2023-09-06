@@ -1,13 +1,16 @@
 import Filme from './../filme/Filme'
 import './Main.css'
+import lupa from '..//img/lupa.png';
 
 export default function Main(){
     return(
 <>
-        <div className="campo_pesquisa">
-            <input type="text" className='botao_pesquisa'placeholder="Pesquise um filme"></input>
-            <p>Digitado:</p>
-        </div>
+        {<div id="divBusca">
+
+              <input type="text" id="txtBusca" placeholder="Encontre o filme desejado..."/>
+              <img src={lupa} alt="Buscar..." id="btnBusca"/>
+</div>}
+       
 
         <main className="content-main">
             <Filme titulo="Barbie Live Action" 
