@@ -46,11 +46,11 @@
     height: 25px;
     background-position: 2px -280px;
 }*/
-#txtBusca{
+#txtBusca, .botao_pesquisa{
     float:left;
     background-color:transparent;
     padding-left:5px;
-    font-size:18px;
+    font-size:17px;
     border:none;
     height:32px;
     width:450px;
@@ -76,12 +76,11 @@
     
   }
 
-  #btnBusca:focus, input:focus {
+  .botao_pesquisa:focus, input:focus {
     box-shadow: 0 0 0 0;
    
     outline: 0.5px solid #e0218a;
 }
-  
   #divBusca img{
     width: 200px;
     
@@ -93,11 +92,14 @@
   
   .campopesquisa{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 40px 0px 30px 0px;
+    margin: 40px 0px 0px 0px;
   }
-
+.campopesquisa p{
+  margin-top: 40px;
+}
   #divBusca{
     width:auto;
     border-radius: 5px;
