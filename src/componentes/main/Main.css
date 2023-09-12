@@ -62,6 +62,8 @@
     border: none;
     background-color: #e0218a;
     height:33.5px;
+  }button:hover{
+    cursor: pointer;
   }
   
   #btnBusca{
@@ -90,7 +92,6 @@
   }
   
   .campopesquisa{
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,7 +99,11 @@
   }
 
   #divBusca{
-    width:00px;
+    width:auto;
     border-radius: 5px;
-    border: solid 1px blue;
+    border: solid 1px #e0218a;
+  }
+
+  #divBusca:active{
+    border: 2px solid #e0218a;;
   }
