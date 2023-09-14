@@ -37,7 +37,7 @@ export default function Main() {
               id: 4,
               titulo:'Barbie e a Princesa Plebeia',
               sinopse:"Uma plebeia, moradora de um vilarejo, é muito parecida com a princesa do reino. Os destinos das duas se cruzam quando a princesa é sequestrada, e a moça humilde usa sua incrível semelhança com ela para tentar salvar das mãos do vilão.ta Encantada. Mas como pode uma garota armada apenas de sua coragem, honestidade e inteligência conseguir isso, tudo enquanto o belo Príncipe Daniel se apaixona por ela?",
-              imagem: "/lagodoscisnes.jpg"
+              imagem: "/princesaplebeia.webp"
        }
     ]
     
