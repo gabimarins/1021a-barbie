@@ -32,7 +32,7 @@ export default function Main() {
               titulo:'Barbie e o Lago dos Cisnes',
               sinopse:"O filme traz Barbie como Odette, a jovem filha do padeiro que segue um unicórnio até a Floresta Encantada. O malvado feiticeiro Rodrigo,que pretende derrotar sua prima a Fada e tomar a Floresta, transforma Odette em cisne. A Fada Rainha consegue amenizar o feitiço fazendo com que Odette seja humana à noite e cisne de dia. Odette percebe que, mesmo que sinta ser a pessoa errada para a tarefa, é seu destino salvar a Floresta Encantada. Mas como pode uma garota armada apenas de sua coragem, honestidade e inteligência conseguir isso, tudo enquanto o belo Príncipe Daniel se apaixona por ela?",
               imagem: "/lagodoscisnes.jpg"
-       }
+       },
        {
               id: 4,
               titulo:'Barbie e a Princesa Plebeia',
