@@ -17,45 +17,27 @@ export default function Main() {
     const filmes:FilmeType[] = [
        {
               id: 1,
-              titulo:'barbie',
-              sinopse:"atatata",
+              titulo:'Barbie Live Action',
+              sinopse:"Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.",
               imagem: "/barbie.png"
        },
        {
               id: 2,
-              titulo:'quebranozes',
-              sinopse:"blublublu",
+              titulo:'Barbie: o Quebra-Nozes',
+              sinopse:"Clara ganha um lindo soldadinho de madeira de sua tia favorita. Na mesma noite, o soldado ganha vida para protege-la do Rato Rei, que invade sua sala. Ela acorda e ajuda o Quebra-Nozes, mas o Rato Rei a encolhe com uma terrível magia. Então, os dois se envolvem em uma espetacular aventura pera encontrar a Princesa Caramelo, a única que pode quebrar o diabólico feitiço.",
               imagem: "/quebranozes.webp"
        },
        {
               id: 3,
-              titulo:'lagocisnes',
+              titulo:'Barbie como Rapunzel',
               sinopse:"iiiiiii",
-              imagem: "/lagodoscisner.jpg"
+              imagem: "/lagodoscisnes.jpg"
        }
     ]
     
-    function TrataTexto(e:React.ChangeEvent<HTMLInputElement>){
-        console.log(e.target.value)
-       setTexto(e.target.value)
-    }
-
-    return(
-<>
-        {
-              <div className="campopesquisa"> 
-                     <div id="divBusca">
-                            <input type="text" className="botao_pesquisa" placeholder="Encontre o filme desejado..." onChange={TrataTexto}/>
-                            <button className="divBusca"><img src={lupa}></img></button>
-                    </div>
-                    {(texto)?<p>Resultados para: {texto}</p>:""}
-              </div>
-       }
-       
-        <main className="content-main">
 
 
-             {/*n tem essa chave  
+   {/*n tem essa chave  
              <Filme titulo="Barbie Live Action" 
                     sinopse="Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, 
                     Barbie parte para o mundo humano em busca da verdadeira felicidade."
@@ -90,6 +72,46 @@ export default function Main() {
                     sinopse="Genevieve e suas irmãs adoram dançar. Como são impedidas pela Duquesa Rowena, as princesas bailarinas descobrem um mundo mágico onde dançam sem serem 
                     incomodadas. Porém, acontecimentos mais urgentes as levam a tentar salvar a vida do pai."
                     imagem= "/dozeprincesas.png"/> */}
+
+
+
+
+
+
+
+
+    function TrataTexto(e:React.ChangeEvent<HTMLInputElement>){
+        console.log(e.target.value)
+       setTexto(e.target.value)
+    }
+
+    return(
+<>
+        {
+              <div className="campopesquisa"> 
+                     <div id="divBusca">
+                            <input type="text" className="botao_pesquisa" placeholder="Encontre o filme desejado..." onChange={TrataTexto}/>
+                            <button className="divBusca"><img src={lupa}></img></button>
+                    </div>
+                    {(texto)?<p>Resultados para: {texto}</p>:""}
+              </div>
+       }
+       
+        <main className="content-main">
+                     {filmes
+                     .filter((filme) => {
+                     const textoSemEspacos = texto.replace(/\s/g, ''); // Remove espaços em branco do texto
+                     const tituloSemEspacos = filme.titulo.replace(/\s/g, ''); // Remove espaços em branco do título do filme
+                     const sinopseSemEspacos = filme.sinopse.replace(/\s/g, ''); // Remove espaços em branco da sinopse do filme
+                     const tudo = tituloSemEspacos.toLowerCase().includes(textoSemEspacos.toLowerCase());
+                     const tudo2 = sinopseSemEspacos.toLowerCase().includes(textoSemEspacos.toLowerCase());
+                     const tudo3 = tudo || tudo2; // Use '||' (ou) para permitir que qualquer uma das condições seja verdadeira
+                     return tudo3;
+                     })
+                     .map((filme) => (
+                     <Filme key={filme.id} titulo={filme.titulo} sinopse={filme.sinopse} imagem={filme.imagem} />
+                     ))}
+          
         </main>
 
         </>
