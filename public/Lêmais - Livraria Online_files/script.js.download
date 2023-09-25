@@ -1,0 +1,167 @@
+const body = document.querySelector("body")
+
+const section0 = document.querySelector(".section0")
+
+const section1 = document.querySelector(".section1")
+const logolivro = document.querySelector(".logolivro")
+const imagemfilme = document.querySelector(".imagemfilme")
+const maisinfo = document.querySelector(".maisinfo")
+const saibamais = document.querySelector(".saibamais")
+const fecharsaiba = document.createElement("div")
+const comprar = document.querySelector(".comprar")
+
+
+const fechar = document.createElement("div")
+const famosos = document.querySelector("#famosos")
+const foco = document.createElement("div")
+const descFilme = document.createElement("div")
+
+
+var contador = 1;
+var num = Math.floor(Math.random()*8)
+
+//interação 1
+logolivro.style.backgroundImage = "url('img/livros/livro"+num+".jpg')"
+imagemfilme.style.backgroundImage = "url('img/filmes/filme"+num+".jpg')"
+
+
+//interacao 2
+maisinfo.addEventListener("click", function(){
+    for(let i=0; i<1; i++){
+        maisinfo.style.transform = "scale(1.05)"
+        const mostrarInfo = document.createElement("div")
+        const fecharinfo = document.createElement("div")
+        body.prepend(mostrarInfo)
+        mostrarInfo.id = "mostrarInfo"
+
+        mostrarInfo.innerText = "DESTAQUES \nMais procurados \nLançamentos \n ___________________________________ \n\nRECURSOS \nKindle Unlimited \nAudio-book \nE-book \n___________________________________\n\nNAVEGAR POR CATEGORIA \nGênero \nAutor \nAno de lançamento \n ___________________________________\n\nAJUDA E CONFIGURAÇÕES \nSua conta \nLogin"
+    
+        mostrarInfo.prepend(fecharinfo)
+        fecharinfo.innerText = "X"
+        fecharinfo.id = "fecharinfo"
+        fecharinfo.addEventListener("click", function() {
+          mostrarInfo.remove()
+          maisinfo.style.transform = "none"
+        })
+
+        }
+  
+})
+
+
+//interacao 3
+saibamais.addEventListener("click", function() {   
+    for(let i=0; i<1; i++){
+    const saberMais = document.createElement("div")
+   body.prepend(saberMais)
+   saberMais.id = "saberMais"
+   const fecharsaiba = document.createElement("div")
+   
+    switch (num){
+        case 0:  
+            saberMais.innerText = "O VERÃO QUE MUDOU A MINHA VIDA" + "\n\nEscrito por: Jenny Han" + "\n\nSempre que chegam as férias de verão, Isabel Conklin deixa para trás sua vida monótona na cidade e vai com a família para Cousins Beach. A casa de praia é seu segundo lar, e é lá que Belly reencontra as pessoas que mais ama: a melhor amiga de sua mãe, Susannah, e os filhos dela, Conrad e Jeremiah." + "\n\nAno após ano, ela tenta se aproximar de Conrad, mas nunca dá certo. Parece que o garoto nunca vai corresponder aos sentimentos de Belly. Dessa vez, no entanto, ela percebe algo diferente: Jeremiah passou a enxergá-la com outros olhos, e os dois estão cada vez mais próximos. Belly mudou. E esse verão tem tudo para ser o melhor de sua vida."
+            break;
+        case 1:
+            saberMais.innerText = "AMOR E GELATO" + "\n\nEscrito por: Jenna Evans" + "\n\nDepois da morte da mãe, Lina fica com a missão de realizar um último pedido: ir até a Itália para conhecer o pai. Do dia para a noite, ela se vê na famosa paisagem da Toscana, morando em uma casa localizada no mesmo terreno de um cemitério memorial de soldados americanos da Segunda Guerra Mundial, com um homem que nunca tinha ouvido falar. Apesar das belezas arquitetônicas, da história da cidade e das comidas maravilhosas, o que Lina mais quer é ir embora correndo dali." + "\n\nMas as coisas começam a mudar quando ela recebe um antigo diário da mãe. Nele, a menina embarca em uma misteriosa história de amor, que pode explicar suas próprias origens. No meio desse turbilhão de emoções, Lina ainda conhece Ren e Thomas, dois meninos lindos que vão mexer ainda mais com seu coração." 
+            break; 
+       case 2:
+            saberMais.innerText = "A CINCO PASSOS DE VOCÊ" + "\n\nEscrito por: Rachael Lippincott" + "\n\nStella Grant gosta de estar no controle. Ela parece ser uma adolescente típica, mas em sua rotina há listas de tarefas e inúmeros remédios que ela deve tomar para controlar a fibrose cística, uma doença crônica que impede que seus pulmões funcionem como deveriam. Suas prioridades são manter seus pais felizes e conseguir um transplante – e uma coisa não existe sem a outra. Mas para ganhar pulmões novos, Stella precisa seguir seu tratamento à risca e eliminar qualquer chance de infecção, o que significa que ela não pode ficar a menos que dois metros de distância – ou seis passos – de outros pacientes com a doença. O primeiro item é fácil para ela, mas o segundo pode se provar mais difícil do que ela esperava. \n\nO único controle que Will Newman deseja é o de sua própria vida. Ele não dá a mínima para o novo tratamento experimental para o qual foi selecionado e não aguenta mais a pressão de sua mãe para que melhore. Prestes a completar dezoito anos, ele mal pode esperar para finalmente se livrar das máquinas e hospitais, usando o pouco de vida que ainda lhe resta para conhecer o mundo. Stella e Will são muito diferentes. Ao mesmo tempo, a doença que os une não é a única coisa que têm em comum. Eles têm que ficar a cinco passos um do outro, mas, conforme a conexão entre os dois aumenta, a vontade de burlar a distância física parece insuportável. Um grande amor vale um passo roubado?"
+            break;
+        case 3:
+            saberMais.innerText = "NA PORTA AO LADO" + "\n\nEscrito por: Luiza Trigo" + "\n\nNa porta ao lado retoma as personagens de Meus 15 anos – as amigas Bia, Carol, Amanda, Pri e Roberta – e gira em torno das aventuras e desventuras de Carol, que começa o novo ano na escola tendo que encarar não só o casamento de sua mãe e uma mudança de casa, mas também o padrasto como professor e o filho dele como colega de turma. Parece muito azar para uma garota só! Mas muitas outras surpresas aguardam a protagonista, suas amigas e os leitores ao longo das páginas. Afinal, não é apenas Tomás – o insuportável filho de Carlos, marido de sua mãe – que vai tirar o sono de Carol. Um outro novo colega de turma, Bernardo, também vai mexer com a cabeça (e o coração) da garota. Em meio às mudanças em sua rotina e em sua relação com a mãe, por conta da nova configuração familiar, e aos altos e baixos típicos da adolescência, Carol muitas vezes se sente confusa e tem que fazer escolhas difíceis. Mas aprende que o primeiro passo para ser feliz é se conhecer e respeitar os próprios sentimentos. Mesmo que para chegar lá tenha que fazer algumas besteiras no caminho... Com uma trama ágil e cheia de reviravoltas em que amizades, amores e relações familiares são postos à prova, Luiza Trigo constrói uma história emocionante feita de descobertas, sonhos, desilusões, alegrias, decepções e, acima de tudo, amadurecimento. Como a vida de todo adolescente. E ainda enriquece a narrativa com referências a livros e filmes – grande paixão de Carol – e as deliciosas guloseimas preparadas pela mãe da protagonista, que dão ainda mais sabor à história."
+            break;
+       case 4:
+            saberMais.innerText = "A ÚLTIMA MÚSICA" + "\n\nEscrito por: Nicholas Sparks" + "\n\nUma das lembranças mais felizes de Ronnie era se sentar ao lado do pai ao piano e tocar por horas. Porém, desde que ele se separou da mãe dela e se mudou de Nova York, a menina só consegue olhar para o instrumento com raiva e mágoa. Três anos após o divórcio, Ronnie mal tem contato com ele e a mãe acha que já está na hora de os dois reconstruírem os laços, passando juntos as férias de verão. Antes um pianista que sempre estava viajando, o pai agora leva uma vida tranquila numa pequena cidade litorânea, imerso no trabalho de reconstrução do vitral de uma igreja, destruído em um incêndio misterioso." + "\n\nA última coisa que a rebelde Ronnie quer é passar meses num local entediante como aquele, mas aos poucos a brisa da praia e de novas paixões começa a acalentar seu coração ressentido."
+            break;
+        case 5:
+            saberMais.innerText = "POR LUGARES INCRÍVEIS" + "\n\nEscrito por: Jennifer Nivens" + "\n\nViolet Markey tinha uma vida perfeita, mas todos os seus planos deixam de fazer sentido quando ela e a irmã sofrem um acidente de carro e apenas Violet sobrevive. Sentindo-se culpada pelo que aconteceu, a garota se afasta de todos e tenta descobrir como seguir em frente. Theodore Finch é o esquisito da escola, perseguido pelos valentões e chamado de “aberração” por onde passa. Para piorar, é obrigado a lidar com longos períodos de depressão, o pai violento e a apatia do resto da família. Enquanto Violet conta os dias para o fim das aulas, quando poderá ir embora da cidadezinha onde mora, Finch pesquisa diferentes métodos de suicídio e imagina se conseguiria levar algum deles adiante. Em uma dessas tentativas, ele vai parar no alto da torre da escola e, para sua surpresa, encontra Violet, também prestes a pular. Um ajuda o outro a sair dali, e essa dupla improvável se une para fazer um trabalho de geografia: conhecer lugares incríveis do estado onde moram. Ao lado de Finch, Violet para de contar os dias e finalmente passa a vivê-los. O garoto, por sua vez, encontra alguém com quem pode ser ele mesmo, e torce para que consiga se manter desperto."
+            break;
+        case 6: 
+            saberMais.innerText = "PESSOAS NORMAIS" + "\n\nEscrito por: Sally Rooney" + "\n\nNa escola, no interior da Irlanda, Connell e Marianne fingem não se conhecer. Ele é a estrela do time de futebol, ela é solitária e preza por sua privacidade. Mas a mãe de Connell trabalha como empregada na casa dos pais de Marianne, e quando o garoto vai buscar a mãe depois do expediente, uma conexão estranha e indelével cresce entre os dois adolescentes ― contudo, um deles está determinado a esconder a relação." + "\n\nUm ano depois, ambos estão na universidade, em Dublin. Marianne encontrou seu lugar em um novo mundo enquanto Connell fica à margem, tímido e inseguro. Ao longo dos anos da graduação, os dois permanecem próximos, como linhas que se encontram e separam conforme as oportunidades da vida. Porém, enquanto Marianne se embrenha em um espiral de autodestruição e Connell começa a duvidar do sentido de suas escolhas, eles precisam entender até que ponto estão dispostos a ir para salvar um ao outro. Uma história de amor entre duas pessoas que tentam ficar separadas, mas descobrem que isso pode ser mais difícil do que tinham imaginado."
+            break;
+        case 7:
+            saberMais.innerText = "O JOGO DO AMOR E ÓDIO" + "\n\nEscrito por: Sally Thorne" + "\n\nLucy Hutton e Joshua Templeman se odeiam. Não é desgostar. Não é tolerar. É odiar. E eles não têm nenhum problema em demonstrar esses sentimentos em uma série de manobras ritualísticas passivo-agressivas enquanto permanecem sentados um diante do outro, trabalhando como assistentes executivos de uma editora." + "\n\nLucy não consegue entender a abordagem apática, rígida e meticulosa que Joshua adota ao realizar seu trabalho. Ele, por sua vez, vive desorientado com as roupas coloridas de Lucy, suas excentricidades e seu jeitinho Poliana de levar a vida." + "\n\nDiante da possibilidade de uma promoção, os dois travam uma guerra de egos e Lucy não recua quando o jogo final pode lhe custar o trabalho de seus sonhos. Enquanto isso, a tensão entre o casal segue fervendo, e agora a moça se dá conta de que talvez não sinta ódio por Joshua. E talvez ele também não sinta ódio por Lucy. Ou talvez esse seja só mais um jogo."
+            break;
+        }
+       saberMais.prepend(fecharsaiba)
+        fecharsaiba.innerText = "X"
+        fecharsaiba.id = "fecharsaiba"
+        fecharsaiba.addEventListener("click", function() {
+      saberMais.remove()
+    })
+}
+  })
+  
+
+  //interacao 4
+comprar.addEventListener("click", function(){
+    switch(num){
+        case 0:
+            comprar.href = "https://www.amazon.com.br/Ver%C3%A3o-Mudou-Minha-Vida-Trilogia/dp/8551004441"
+            break;
+        case 1: 
+            comprar.href = "https://www.amazon.com.br/Amor-Gelato-Jenna-Evans-Welch/dp/8551002341/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1X3ZL6IZG8FD6&keywords=amor+e+gelato&qid=1655345336&sprefix=amor+e+gelato%2Caps%2C204&sr=8-1"
+            break;
+        case 2: 
+            comprar.href = "https://www.amazon.com.br/cinco-passos-voc%C3%AA-Rachael-Lippincott/dp/8525067423/ref=sr_1_1?crid=3QEKTZJT3E8I4&keywords=a+cinco+passos+de+voc%C3%AA&qid=1655345445&sprefix=a+cinco+pa%2Caps%2C224&sr=8-1"
+            break;
+        case 3: 
+            comprar.href = "https://www.amazon.com.br/Na-Porta-Lado-Luiza-Trigo/dp/8579802474/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=33P3G17FM3G6K&keywords=na+porta+ao+lado&qid=1655345470&sprefix=na+porta+ao+lado%2Caps%2C196&sr=8-1"
+            break;
+        case 4: 
+            comprar.href = "https://www.amazon.com.br/%C3%BAltima-m%C3%BAsica-Nicholas-Sparks/dp/8530600622/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=JHM991PMBXB3&keywords=a+ultima+musica&qid=1655345494&sprefix=a+ultima+music%2Caps%2C198&sr=8-1"
+            break;
+        case 5: 
+            comprar.href = "https://www.amazon.com.br/Por-lugares-incr%C3%ADveis-Jennifer-Niven/dp/8565765571/ref=sr_1_1?crid=2AVYOYDHCWBTK&keywords=por+lugares+incr%C3%ADveis&qid=1655345519&sprefix=por+lu%2Caps%2C232&sr=8-1"
+            break;
+        case 6: 
+            comprar.href = "https://www.amazon.com.br/Pessoas-normais-Sally-Rooney/dp/8535932569/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=39S0L9O8RLWQC&keywords=pessoas+normais&qid=1655345542&sprefix=pessoas+normai%2Caps%2C199&sr=8-1"
+            break;
+        case 7:
+            comprar.href = "https://www.amazon.com.br/Jogo-do-Amor-%C3%93dio/dp/855030266X/ref=sr_1_1?crid=21V075CKDNTWX&keywords=o+jogo+do+amor+%C3%B3dio+sally+thorne&qid=1656255154&s=books&sprefix=o+jogo+do+amor+%2Cstripbooks%2C306&sr=1-1"
+            break;
+        }
+})
+
+//interacao 5
+for(let i = 1; i<6;i++){
+    const famosos2 = document.createElement("div")
+    famosos2.className = "livrosfamosos"
+    famosos.append(famosos2)
+    famosos2.style.backgroundImage ="url('img/miniaturas/miniatura"+i+".jpg')"
+    famosos2.id="miniatura"+i
+    famosos2.addEventListener("mouseover", function(){  
+        if(cont == 1){
+        famosos2.append(foco)
+        foco.setAttribute("class", "foco")
+        foco.style.backgroundImage = "url('img/miniaturas/miniatura"+i+".jpg')"
+        cont = 0
+        foco.append(descFilme)
+        descFilme.id = "descFilme"
+        switch(i){
+            case 1:
+                descFilme.innerText = "Trono de Vidro -\npor Sarah J. Mass \n\n Ver mais     ♡"
+                
+
+                break;
+            case 2:
+                descFilme.innerText = "Harry Potter -\npor J.K. Rowling \n\n Ver mais     ♡"
+                break;
+            case 3:
+                descFilme.innerText = "É Assim que Acaba -\npor Colleen Hoover \n\n Ver mais     ♡"
+                break;
+            case 4:
+                descFilme.innerText = "A Seleção -\npor Kiera Kass \n\n Ver mais     ♡"
+                break;
+            case 5:
+                descFilme.innerText = "Divergente -\npor Veronica Roth \n\n Ver mais     ♡"
+                break;
+        }
+      
+        } 
+    })
+    famosos2.addEventListener("mouseleave",function(){
+        foco.remove()
+        cont = 1
+    })
+}

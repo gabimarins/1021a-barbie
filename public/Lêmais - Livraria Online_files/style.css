@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    
+    display: flex;
+    flex-direction: column;
+}
+.roxo1{
+    width: 100%;
+    height: 80px;
+    background-color: #383070;
+}
+
+.logo{
+    height: 60px;
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.linha{
+    width: 100%;
+    height: 2px;
+    background-color: #fcf1f1;
+}
+
+.roxo2{
+    width: 100%;
+    height: 60px;
+    background-color: #383070;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.icones{
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    justify-content: space-between;
+    text-align: center;
+}
+.maisinfo{
+    height: 30px;
+}.maisinfo:hover{
+    transform: scale(1.05);
+}
+.login:hover{
+    transform: scale(1.20);
+}
+
+#mostrarInfo{
+    position: absolute;
+    padding: 1px 20px 40px 20px;
+    height: 350px;
+    width: 300px;
+    background-color: #383070;
+    margin-top: 12vh;
+    margin-left: 23vw;
+    color: white;
+    
+    border-radius: 5px;
+    text-align: left;
+}
+ 
+#fecharinfo{
+    position: relative;
+    padding-right: 3px;
+    height: 15px;
+    width: 15px;
+    margin-left: 290px;
+    background-color: #ffdfdf;
+    color: #383070;
+    text-align: center;
+    font-weight: bold;
+}
+ 
+
+
+form{
+    display: flex;
+    
+}
+.pesquisa{
+    background-color: #fcf1f1;
+    border: none;
+    color: #383070;
+    font-weight: bold;
+    height: 30px;
+    width: 300px;
+}
+.botao-pesquisa{
+    border: none;
+    background-color: #fcf1f1;
+    width: 40px;
+}
+
+.lupa{
+    height: 20px;
+}
+
+.nada1{
+    width: 190px;
+}
+
+.nada2{
+    width: 100px;
+}
+.carrinho{
+    height: 30px;
+}
+
+
+.login{
+    height: 15px;
+}
+
+.section0{
+    display: flex;
+    justify-content: center;
+    background-color: #ff6e6e;
+    height: 30px;
+}
+
+.aviso{
+    font-size: 10px;
+    text-align: center;
+    width: 1000px;
+    align-items: center;
+    padding-top: 3px;
+}
+
+.rosa{
+    height: 380px;  
+    width: 100%;
+    background-color: #ffd4d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.conteudo-rosa{
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.parte1rosa{
+    display: flex;
+    flex-direction: column;
+}
+
+.topico-rosa{
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #383070;
+    
+    color: #383070;
+}
+
+.titulo-rosa{
+    font-family: cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #383070;
+    font-size: 30px;
+}
+
+
+.saibamais{
+    padding-top: 30px;
+    color: #ff2e2e;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#saberMais{
+    margin-top: 16vh;
+    margin-left: 23.5vw;
+    padding: 20px 20px 00px 30px;
+    position: absolute;
+    background-color: #383070;
+    opacity: 90%;
+    box-shadow: 5px 5px 10px #ff9696;
+    color: white;
+    width: 960px;
+    height: 330px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 15px;
+    text-align: justify;
+}
+#fecharsaiba{
+    position: relative;
+    padding-right: 3px;
+    height: 15px;
+    width: 15px;
+    margin-left: 940px;
+    background-color: #ffdfdf;
+    color: #383070;
+    text-align: center;
+    font-weight: bold;
+}
+
+.partelivro, .partefilme{
+    display: flex;
+    flex-direction: column;
+    background-color: #fcf1f1;
+    color: #ff2e2e;
+}
+
+.logolivro{
+    width: 200px;
+    height: 285px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.comprar, .assistir{
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.imagemfilme{
+    width: 300px;
+    height: 160px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.section2{
+    width: 100%;
+    height: 55px;
+    background-color: #383070;
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.roxo3{
+    width: 1000px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.roxo3 a{
+    min-width: 190px;
+    justify-content: space-between;
+    padding: 20px 50px 20px 50px;
+    color: #fcf1f1;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.bordaroxo3{
+    border-right: 1px solid #fcf1f1;
+}
+
+.textoroxo3:hover{
+    color: #ff6e6e;
+    cursor: pointer;
+
+}
+
+.section3{
+    width: 100%;
+    height: 530px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+    background: #fcf1f1;
+    
+}
+
+.roxo-claro{
+    width: 1000px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.filtro{
+    padding-top: 40px;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    
+}
+
+.filtrar{
+    height: 15px;
+    width: 100px;
+    padding: 10px;
+    background-color: #ff6e6e;
+    color: #383070;
+    text-align: left;
+    font-weight: bold;
+}.filtrar:hover{
+    cursor: pointer;
+}
+
+.tituloroxoclaro{
+    position: relative;
+    color: #383070;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+
+
+
+
+/*/////////////////////////*/
+
+.container{
+    padding-top: 30px;
+}
+
+
+#famosos{
+    position: absolute;
+    display: flex;
+
+}
+
+#famosos2{
+    width: 30px;
+    
+}
+.livrosfamosos{
+    
+	box-shadow: 0px 0px 3px 3px #ff9696;
+    margin-right: 52px;
+    width: 150px;
+    height: 225px;
+    background-color:#ffd4d4;
+    border-radius: 5px;
+    margin-left: 0.3vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+.foco{    
+    font-weight: bold;
+    color: #383070;
+    position: relative;
+    background-color: #ffd4d4;
+    width: 150px;
+    height: 315px;
+    border-radius: 10px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+	box-shadow: 0px 0px 3px 3px #ff9696;
+    cursor: pointer;
+
+}
+#descFilme{
+    text-align: left;
+    position: absolute;
+    margin-top: 155%;
+    width: 20vw;  
+    height: 15vw;    
+    font-size: 14px;
+    padding: 8px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+   /* background-image: url('/img/filmes/filme0.jpg');*/
+}
+
+
+
+.footer1, .footer2{
+    width: 100%;
+    background-color: #383070;
+    display: flex;
+    justify-content: center;
+}
+
+.footer1{
+    display: flex;
+    height: 80px;
+}
+.logo2{
+    padding-top: 10px;
+    width: auto; 
+    max-height: 70%; 
+    justify-content: center;
+    text-align: center;
+}
+.footer2{
+    height: 100px;
+}
+
+
+.conteudo-footer2{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.textosdofooter{
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.textofooter{
+    width: 100%;
+    justify-content: space-between;
+    color: #fcf1f1;
+    text-decoration: none;
+    cursor: auto;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.textofooter:hover{
+    cursor: pointer;
+    color: #ff6e6e;
+}
+
+.ultimotexto{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.direitos{
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px;
+    font-size: 12px;
+}
+
+
+
+
+
