@@ -1,26 +1,24 @@
 import './Header.css'
-import Link from './../link/Link'
-import barbielogo from '..//img/Barbie_Logo.svg.png';
-
+import LinkNav from '../linknav/LinkNav'
 function Header(){
     return(
         <header>
-            <div className="fotobarbie">
-            <img className="logo" src={barbielogo} alt="Logo da Barbie"></img>
+            <div>
+                <h1>Logo</h1>
             </div>
             <nav>
                 <ul>
                     <li>
-                        <Link texto='Home'/>
+                        <LinkNav url="/" texto='Home'/>
                     </li>
                     <li>
-                        <Link texto='Notícia'/>
+                        <LinkNav url="/noticias" texto='Notícia'/>
                     </li>
                     <li>
-                        <Link texto='Sobre'/>
+                        <LinkNav url="/sobre" texto='Sobre'/>
                     </li>
                     <li>
-                        <Link texto='Contato'/>
+                        <LinkNav url="/contato" texto='Contato'/>
                     </li>
                 </ul>
             </nav>
