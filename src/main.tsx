@@ -1,13 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import "./main.css"
-import Header from './componentes/header/Header'
-import Main from './componentes/main/Main'
+import{createBrowserRouter, RouterProvider} from "react-router-dom"
+import Header from './componentes/header/Header.tsx';
+import Main from './componentes/main/Main.tsx';
+import Footer from './componentes/footer/Footer.tsx';
 
-import {
-  createBrowserRouter, 
-  RouterProvider
-} from "react-router-dom"
 
 const router = createBrowserRouter([
   {
@@ -15,6 +13,7 @@ const router = createBrowserRouter([
     element:<>
       <Header/>
       <Main/>
+      <Footer/>
     </> ,
   },
   {
@@ -33,6 +32,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
