@@ -7,7 +7,7 @@ import lupa from '../img/lupa.png';
 type FilmeType = {
     id:number,
     titulo:string,
-    sinopse:string,
+    descricao:string,
     imagem:string
 }
 
@@ -44,9 +44,9 @@ return (
        <input type="text" className="botao_pesquisa" placeholder="Encontre o filme desejado..." onChange={TrataTexto}/>
        <button className="divBusca"><img src={lupa}></img></button>
 
-            {(texto)?<p>Resultados para: {texto}</p>:""}
+           
                 
-        </div></div>
+        </div> {(texto)?<p>Resultados para: {texto}</p>:""}</div>
 
         <main className="content-main">
         {
@@ -58,7 +58,7 @@ return (
               
               .map((filme)=>
                      <Filme 
-                                key={filme.id} sinopse={filme.sinopse} titulo={filme.titulo} imagem={filme.imagem}
+                                key={filme.id} descricao={filme.descricao} titulo={filme.titulo} imagem={filme.imagem}
                      />
               )
        }

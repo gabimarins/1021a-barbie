@@ -13,7 +13,7 @@ export function Footer(){
 <div className="conteudorodape">
 <div className="sessao1">
             <div className="blocoinicial">
-                <img className="logo" src={barbielogo} alt="Logo da Barbie"></img>
+                <img className="logofooter" src={barbielogo} alt="Logo da Barbie"></img>
                 <div className="divtexto"><p>Descubra uma ampla seleção de brinquedos e conteúdos da Barbie. Compre todas as bonecas Barbie, conjuntos, casas de bonecas e muito mais hoje!</p></div>
                 <div className="redessociais">
                     <img src={discord} alt="discord"/>
