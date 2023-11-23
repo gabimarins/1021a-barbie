@@ -61,6 +61,8 @@
   button{
     border: none;
     background-color: #e0218a;
+    
+    border-radius: 5px;
     height:33.5px;
   }button:hover{
     cursor: pointer;
@@ -69,22 +71,23 @@
   #btnBusca{
     float:left;
     
-    background-color: #e0218a ;
     cursor:pointer;
     
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 5px;
     
   }
 
   .botao_pesquisa:focus, input:focus {
     box-shadow: 0 0 0 0;
-   
-    outline: 0.5px solid #e0218a;
+   outline: none;
+    /* outline: 0.5px solid #e0218a; */
 }
   #divBusca img{
     width: 200px;
     
     float:left;
+    
+    border-radius: 5px;
     width: 20px;
     height: 20px;
     
@@ -95,17 +98,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+    border-radius: 5px;
     margin: 40px 0px 0px 0px;
   }
 .campopesquisa p{
   margin-top: 40px;
+  
 }
   #divBusca{
     width:auto;
-    border-radius: 5px;
-    border: solid 1px #e0218a;
+    border-radius: 0px 5px;
+    box-shadow: 0 0 8px 1px rgb(218, 218, 218);
   }
 
   #divBusca:active{
-    border: 2px solid #e0218a;;
+    /* border: 2px solid #e0218a;; */
   }
