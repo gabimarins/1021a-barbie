@@ -8,7 +8,7 @@ type FilmeType = {
     id:number,
     titulo:string,
     descricao:string,
-    imagem:string
+    foto:string
 }
 
 const URL_API = "http://localhost:3000/filmes";
@@ -58,7 +58,7 @@ return (
               
               .map((filme)=>
                      <Filme 
-                                key={filme.id} descricao={filme.descricao} titulo={filme.titulo} imagem={filme.imagem}
+                                key={filme.id} descricao={filme.descricao} titulo={filme.titulo} foto={filme.foto}
                      />
               )
        }

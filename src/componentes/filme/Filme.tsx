@@ -3,7 +3,7 @@ import './Filme.css'
 type FilmeProps = {
     titulo: string,
     descricao:string,
-    imagem:string
+    foto:string
 
 }
 
@@ -14,7 +14,7 @@ function Filme(props:FilmeProps){
             chaves vc pode usar js, por isso da pra importar
             o "imagem" dentro do componente IMG */}
            <div className="foto_filme">
-                <img className="img-filme" src={props.imagem} alt=""></img>
+                <img className="img-filme" src={props.foto} alt=""></img>
            </div> 
 
             <div className="text-barbie">
