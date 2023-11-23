@@ -18,17 +18,17 @@ export default function Main() {
     const [filmes, setFilmes] = useState<FilmeType[]>([]);
     
     useEffect(() => {
-       const buscarFilmes = async () => {
+       const fetchData  = async () => {
               try {
                      const resposta = await axios.get<FilmeType[]>(URL_API);
                      setFilmes(resposta.data);
               }
               catch(error){
-                     console.log('Não foi possível encontrar esse dado.');
+                     console.log('Erro ao buscar dados:', error);
               }
        };
 
-    buscarFilmes();
+    fetchData ();
 }, []);
 
 function TrataTexto(e:React.ChangeEvent<HTMLInputElement>){
