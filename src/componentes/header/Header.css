@@ -2,7 +2,7 @@ header{
     background-color: rgb(255, 223, 228);
     display: flex;
     justify-content: space-between;
-    padding: 0px 10vw;
+    padding: 0px 13vw;
     align-items: center;
     height: 60px;
 }
@@ -10,14 +10,14 @@ header ul{
     display: flex;
     list-style: none;
     gap: 15px;
+    padding: 50px;
 }
 header ul li a{
     font-weight: bold;
+    padding-left: 17px;
     font-size: 15px;
-    padding: 10px;
     text-decoration: none;
     color: hotpink;
-    border: 1px solid #e0218a;
 
 }
 
